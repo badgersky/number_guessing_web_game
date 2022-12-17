@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>Imagine and remember number in range 0-1000 and I will try to guess it.</h3>
+    <p>My guess is {{ pc_number }}</p>
+    <form action="/" method="post">
+        <input type="submit" name="answer" value="too big">
+        <input type="submit" name="answer" value="too small">
+        <input type="submit" name="answer" value="you win">
+        <input type="hidden" name="guess" value="{{ pc_number }}">
+        <input type="hidden" name="min" value="{{ mi_num }}">
+        <input type="hidden" name="max" value="{{ mx_num }}">
+    </form>
+{{ msg }}
+</body>
+</html>
